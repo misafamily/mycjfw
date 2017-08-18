@@ -1,0 +1,55 @@
+#nav-container {
+    background-color: #efeeea;
+    bottom: -50px !important;
+}
+/* MENU MAIN*/
+ul.menu-main {
+    padding: 0;
+}
+
+ul.menu-main li {
+    display: inline;
+}
+
+ul.menu-main li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 4px 4px;
+}
+
+ul.menu-main li a:hover,
+ul.menu-main li.active > a {
+    background-color: orange;
+}
+
+ul.menu-main li.deactive a {
+  color: gray;
+  opacity: .5;
+  pointer-events: none;
+}
+
+/* MENU SUB*/
+ul.menu-main-sub {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+}
+ul.menu-main-sub.hidden {
+  display: none;
+}
+ul.menu-main-sub li {
+  list-style: none;
+  display: inline;
+}
+ul.menu-main-sub li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 4px 4px;
+}
+ul.menu-main-sub li.active > a {
+    background-color: rgb(55, 101, 44);
+}

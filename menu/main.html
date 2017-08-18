@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="menu.css">
+</head>
+<body>
+	<!-- main menu -->
+	<ul id="menu-main" class="menu-main" style="float: left;margin-left: 20px;">
+	  <li><a href='{"src": "assets/File_01.html", "id": "page1"}'>Page 1</a></li>
+	  <li>
+			<a href='{"src": "assets/File_02.html", "id": "page2"}'>Page 2</a>
+			<!-- sub menu -->
+			<ul class="menu-main-sub hidden">
+				<li><a href='{"src": "assets/page2_1.html", "id": "page2_1"}'>Page 2_1</a></li>
+				<li><a href='{"src": "assets/page2_2.html", "id": "page2_2"}'>Page 2_2</a></li>
+			</ul>
+			<!-- end sub menu -->
+		</li>
+	  <li><a href='{"src": "assets/File_03.html", "id": "page3", "fps": 160}'>Page 3</a></li>
+	  <li>
+			<a href='{"src": "assets/File_04.html", "id": "page4", "fps": 240}'>Page 4</a>
+			<!-- sub menu -->
+			<ul class="menu-main-sub hidden" style="left:235px;">
+				<li><a href='{"src": "assets/page4_1.html", "id": "page4_1"}'>Page 4_1</a></li>
+			</ul>
+			<!-- end sub menu -->
+		</li>
+	  <li><a href='{"src": "assets/File_05.html", "id": "page5"}'>Page 5</a></li>
+	</ul>
+
+	<!-- main controller -->
+	<ul id="menu-main-controller" class="menu-main" style="float: left;margin-left: 30px;">
+	  <li><a id="goto_prev_page" href='{"event": "goto_prev_page"}'>Pre Page</a></li>
+	  <li><a id="goto_next_page" href='{"event": "goto_next_page"}'>Next Page</a></li>
+	  <li><a id="sound_mute" href='{"event": "sound_mute", "toggle": true}'>Sound Mute</a></li>
+	  <li><a id="reload_page" href='{"event": "reload_page"}'>Reload Page</a></li>
+	</ul>
+</body>
+</html>
