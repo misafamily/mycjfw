@@ -1,0 +1,4 @@
+v0: 
++ init fw
++ support menus, load contents
++ support sub-menus (2nd level)
